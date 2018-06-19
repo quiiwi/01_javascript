@@ -15,3 +15,9 @@ if(mDPC === mDP){
         alert("Welcome Master");
     }
 }else{document.location.href="file:///C:/xampp/htdocs/01_javascript/index4.html"; }
+
+
+
+
+
+
