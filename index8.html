@@ -16,17 +16,19 @@
         <form action="js/script8.js" id="donnees">
     
             <label for="pseudo">Pseudo:</label>
-            <input type="text" id="pseudo" name="user_name"> <br>
+            <input type="text" id="pseudo" name="user_name" required> <br>
         
             <label for="password">Mot de Passe</label>
-            <input type="password" id="password" name="user_password"> <br>
+            <input type="password" id="password" name="user_password" required> <br>
         
             <label for="mail">Boîte Mail</label>
             <input type="email" id="email" name="user_mail"> <br>
+
+            
         
             <input type="button" onclick="myFunction()" value="Envoyer">
     
-            <input type="button" onclick="myFunctionReset()" value="Reser">
+            <input type="button" onclick="myFunctionReset()" value="Annuler">
             
             <input type="button" onclick="myFunctionAfficher()" value="Afficher">
 
@@ -40,7 +42,7 @@
 
                 for(F=0; F<A.length; F++){
 
-                    yy.appendChild(E = document.createTextNode("pseudo :" + A[F].pseudo + " / password :" + A[F].password + " / Email :" + A[F].mail + " / Status :" + A[F].stat));
+                    yy.appendChild(E = document.createTextNode("pseudo :" + A[F].pseudo + " / password :" + A[F].password + " / Email :" + A[F].mail + " / Status :" + A[F].stat + " / Pouvoir :" + A[F].pouvoir));
 
                     yy.appendChild(document.createElement("br"));
                     
