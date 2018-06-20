@@ -1,4 +1,4 @@
-<style>
+{/* <style>
 html{
     overflow: hidden;
 }
@@ -18,4 +18,4 @@ body {
     overflow-y: scroll;
 }
 </style>
-
+ */}

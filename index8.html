@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/script8.js"></script>
     <title>Document</title>
 </head>
 <body>
-
-    <form method="POST" action="script8.js" onsubmit="myFunction()">
-
-        <div>
-            <label for="pseudo">Pseudo:</label>
-            <input type="text" id="pseudo" name="user_name" id="IDpseudo">
-        </div>
-
-        <div>
-            <label for="password">Mot de Passe</label>
-            <input type="password" id="passworld" name="user_password" id="IDpassword">
-        </div>
-
-        <div>
-            <label for="mail">Boîte Mail</label>
-            <input type="email" id="mail" name="user_mail" id="IDmail">
-        </div>
-
-    </form>
+    <div>
+        <form action="js/script8.js" id="donnees">
     
+            <label for="pseudo">Pseudo:</label>
+            <input type="text" id="pseudo" name="user_name"> <br>
+        
+            <label for="password">Mot de Passe</label>
+            <input type="password" id="password" name="user_password"> <br>
+        
+            <label for="mail">Boîte Mail</label>
+            <input type="email" id="email" name="user_mail"> <br>
+        
+            <input type="button" onclick="myFunction()" value="Submit">
+    
+            <input type="button" onclick="myFunctionreset()" value="Reset">
+                    
+        </form>
+    </div>
+    <div>
+        <script>
+            var E;
+            for(E=0; E < A.length; E++){
+                document.write("yolo");
+            }
+        </script>
+    </div>
 </body>
 </html>
