@@ -24,7 +24,11 @@
             <label for="mail">Boîte Mail</label>
             <input type="email" id="email" name="user_mail"> <br>
 
-            
+            <label for="masculin">Homme</label>
+            <input type="radio" name="sexe" id="masculin" class="sexe" >
+
+            <label for="feminin">Femme</label>
+            <input type="radio" name="sexe" id="feminin" class="sexe" checked> <br>
         
             <input type="button" onclick="myFunction()" value="Envoyer">
     
@@ -42,7 +46,7 @@
 
                 for(F=0; F<A.length; F++){
 
-                    yy.appendChild(E = document.createTextNode("pseudo :" + A[F].pseudo + " / password :" + A[F].password + " / Email :" + A[F].mail + " / Status :" + A[F].stat + " / Pouvoir :" + A[F].pouvoir));
+                    yy.appendChild(E = document.createTextNode("pseudo :" + A[F].pseudo + " / password :" + A[F].password + " / Email :" + A[F].mail + " / Status :" + A[F].stat + " / Pouvoir :" + A[F].pouvoir + " / Sexe :" + A[F].sexe));
 
                     yy.appendChild(document.createElement("br"));
                     
