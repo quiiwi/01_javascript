@@ -8,6 +8,10 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="main">
+        <p id="origine">Visiteur</p>
+        <p id="god">Moins que rien</p>
+    </div>
     <div>
         <form action="js/script8.js" id="donnees">
     
@@ -20,17 +24,29 @@
             <label for="mail">Boîte Mail</label>
             <input type="email" id="email" name="user_mail"> <br>
         
-            <input type="button" onclick="myFunction()" value="Submit">
+            <input type="button" onclick="myFunction()" value="Envoyer">
     
-            <input type="button" onclick="myFunctionreset()" value="Reset">
-                    
+            <input type="button" onclick="myFunctionReset()" value="Reser">
+            
+            <input type="button" onclick="myFunctionAfficher()" value="Afficher">
+
+            <input type="button" onclick="myFunctionConnexion()" value="Connexion">
+
         </form>
     </div>
-    <div>
+    <div id="yy">
         <script>
-            var E;
-            for(E=0; E < A.length; E++){
-                document.write("yolo");
+            function myFunctionAfficher(){
+
+                for(F=0; F<A.length; F++){
+
+                    yy.appendChild(E = document.createTextNode("pseudo :" + A[F].pseudo + " / password :" + A[F].password + " / Email :" + A[F].mail + " / Status :" + A[F].stat));
+
+                    yy.appendChild(document.createElement("br"));
+                    
+                    yy.appendChild(document.body.appendChild(E));}   
+                
+                yy.appendChild(document.createElement("hr"));
             }
         </script>
     </div>
