@@ -26,19 +26,34 @@ function myFunction(){
     K = "Membre";
     Q = "Moins que rien";
 
-
-
     var R ;
 	for (i=0; i<document.formulaire.sexe.length; i++) {
 		if (document.formulaire.sexe[i].checked) {
 			R = document.formulaire.sexe[i].id;
 		}
-	}
-	
+    }
 
-    A.push({"pseudo":B, "password":C, "mail":D, "stat":K, "pouvoir":Q, "sexe":R});
+    var a = A.length;
+    if (A.pseudo === B){
+        alert("hfhgf");
+    }
+
+ /*    for(a=0; a<A.length; a++){
+        if(B === A[a].pseudo){
+            alert("ce pseudo a déjà été choisi");
+        }else if(D === A[a].mail){
+            alert("cet email a déjà été choisi");
+        }else {}
+    }  */
+    
+
+
+     /* A.push({"pseudo":B, "password":C, "mail":D, "stat":K, "pouvoir":Q, "sexe":R});  */
 
     console.log(A);
+    console.log("email : " + D);
+    console.log("password : " + C);
+    console.log("pseudo : " + B);
     console.log(R + " a été sélectionné");
 }
 
