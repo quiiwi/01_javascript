@@ -7,16 +7,53 @@
     <script src="js/script5.js"></script>
     <link rel="stylesheet" href="css/style5.css">
     <title>Document</title>
+    <style>
+        @-moz-document url-prefix() {
+    html,body{overflow: hidden !important;}
+}
+element {overflow-y: scroll;}
+/*              .outer {
+            overflow: hidden;
+            }
+            .inner {
+            margin-right: -16px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            } */
+            /*  html{
+                overflow: hidden;
+            }
+            html, body {
+                padding: 0;
+                margin: 0;
+                padding-left: 10px;
+                    
+            }
+            body {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: -30px;
+                bottom: 0; 
+                padding-right: 15px;
+                overflow-y: scroll;
+            }  */
+          /*   @-moz-document url-prefix() {
+            html,body{overflow: hidden !important;}
+            }
+            body{
+                font-size: 1.2em;
+            } */
+            </style>
    
 </head>
 <body>
-    <div>
-
-
+    <div id="matrix">
+            <div id="top" class="outer">top</div>
 
             <script>
                     var a
-                    for(a = 0; a < 100000; a++) {
+                    for(a = 0; a < 1000000; a++) {
                     
                         var y = Math.floor(Math.random()*2);
                     
@@ -29,16 +66,30 @@
                         document.body.appendChild(x);
                     }
 
-                    </script>
+                    function scrollpage() {		
+	                    function f() 
+	                        {
+		                    window.scrollTo(0,i);
+		                    if(status==0) {
+   			                i=i+5;
+			                if(i>=Height){	status=1; } 
+		                    } else {
+			                i=i-5;
+			                if(i<=1){	status=0; }  // if you don't want continue scroll then remove this line
+		                    }
+	                        setTimeout( f, 0.01 );
+	                        }f();
+                            }
+                            var Height=document.documentElement.scrollHeight;
+                            var i=1,j=Height,status=0;
+                            scrollpage();
+
+            </script>
 
 
 
 
     </div>
+    <div id="bottom" class="inner">bottom</div>
 </body>
-<footer id="yy">
-<h1>ppp</h1>
-</footer>
-
-
 </html>
